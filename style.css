@@ -1,0 +1,26 @@
+
+body {
+  margin: 0;
+  display: grid;
+  height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+  height: 100vh;
+  background: url('./img/tree.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  align-items: top;
+  justify-items: center;
+  text-align: center;
+}
+
+.text {
+  font-size: 10vh;
+  font-weight: 600;
+  font-family: 'Indie Flower', cursive;
+  color: #FF9113;
+}
