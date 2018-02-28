@@ -10,7 +10,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
   height: 100vh;
-  background: url('https://flic.kr/p/EutTCA') no-repeat;
+  background: url('https://c2.staticflickr.com/2/1486/25263860782_8b515b1b2f_b.jpg') no-repeat;
   background-size: cover;
   background-position: center;
   align-items: top;
