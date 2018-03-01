@@ -11,7 +11,7 @@ body {
   grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
   height: 100vh;
   background: url(https://c2.staticflickr.com/2/1486/25263860782_8b515b1b2f_b.jpg) no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   background-position: center;
   align-items: top;
   justify-items: center;
@@ -19,7 +19,7 @@ body {
 }
 
 .text {
-  font-size: 10vh;
+  font-size: 8vh;
   font-weight: 600;
   font-family: 'Indie Flower', cursive;
   color: #FF9113;
