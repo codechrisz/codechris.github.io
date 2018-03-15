@@ -6,6 +6,8 @@ body {
   background-size: 100% 100%;
   background-position: fixed;
   background-attachment: fixed;
+  font-family: 'Noto Serif', serif;
+  border: solid 2px #808E8D;
 }
 
 /* Grid container */
@@ -16,29 +18,42 @@ body {
 
 .header {
   grid-row: 1/2;
-  background-color: #90999D;
-  border: solid 2px #54666F;
+  background-color: #CFD6D6;
+  border: solid #808E8D;
+  border-width: 2px 0 2px 0;
+  color: #54666F;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  font-size: 3vh;
 }
 
 .forecast-1 {
-  background-color: #90999D;
+  background-color: #CFD6D6;
   grid-row: 4/6;
-  border: solid 2px #54666F;
+  border: solid #808E8D;
+  border-width: 2px 0 2px 0;
 }
 
 .forecast-2 {
-  background-color: #90999D;
+  background-color: #CFD6D6;
   grid-row: 7/9;
-  border: solid 2px #54666F;
+  border: solid #808E8D;
+  border-width: 2px 0 2px 0;
 }
 
 .footer {
-  background-color: #90999D;
+  background-color: #CFD6D6;
   grid-row: 10/11;
-  border: solid 2px #54666F;
+  border: solid #808E8D;
+  border-width: 2px 0 2px 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 2vh;
 }
 
 /*  Colors
-background-color: #54666F;
-background-color: #90999D;
+http://paletton.com/#uid=13h0u0k18O17rzm4NFO2nx-35tf
 */
