@@ -1,26 +1,44 @@
 
 body {
   margin: 0;
-  display: grid;
-  height: 100vh;
-}
-
-.container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
-  height: 100vh;
+  min-height: 100vh;
   background: url(https://c2.staticflickr.com/2/1486/25263860782_8b515b1b2f_b.jpg) no-repeat;
   background-size: 100% 100%;
-  background-position: center;
-  align-items: top;
-  justify-items: center;
-  text-align: center;
+  background-position: fixed;
+  background-attachment: fixed;
 }
 
-.text {
-  font-size: 8vh;
-  font-weight: 600;
-  font-family: 'Indie Flower', cursive;
-  color: #FF9113;
+/* Grid container */
+.container {
+  display: grid;
+  grid-template-rows: repeat(10, 20vh);
 }
+
+.header {
+  grid-row: 1/2;
+  background-color: #90999D;
+  border: solid 2px #54666F;
+}
+
+.forecast-1 {
+  background-color: #90999D;
+  grid-row: 4/6;
+  border: solid 2px #54666F;
+}
+
+.forecast-2 {
+  background-color: #90999D;
+  grid-row: 7/9;
+  border: solid 2px #54666F;
+}
+
+.footer {
+  background-color: #90999D;
+  grid-row: 10/11;
+  border: solid 2px #54666F;
+}
+
+/*  Colors
+background-color: #54666F;
+background-color: #90999D;
+*/
