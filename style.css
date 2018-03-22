@@ -13,7 +13,14 @@ body {
 /* Grid container */
 .container {
   display: grid;
-  grid-template-rows:  minmax(100px, max-content);
+  grid-template-areas:
+  "header header"
+  "nav nav"
+  "background background"
+  "describe something"
+  "describe something"
+  "footer footer"
+  /*grid-template-rows: minmax(100px, max-content);*/
   grid-gap: 10vh;
 }
 
@@ -28,6 +35,26 @@ body {
   text-align: center;
   justify-content: center;
   font-size: 3vh;
+}
+
+.nav_con {
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px red solid;
+  padding: 0;
+  margin: 0;
+}
+
+.nav_con li {
+  flex: 1;
+}
+
+.background1{
+  height: 20vh;
+}
+
+.background2 {
+  height: 10vh;
 }
 
 .forecast-1 {
