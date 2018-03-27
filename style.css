@@ -25,7 +25,6 @@ body {
 }
 
 .header {
-
   background-color: #CFD6D6;
   border: solid #808E8D;
   border-width: 2px 0 2px 0;
@@ -39,14 +38,30 @@ body {
 
 .nav_con {
   display: flex;
-  flex-wrap: wrap;
-  border: 2px red solid;
+  list-style: none;
+  border-bottom: solid 2px #808E8D;
   padding: 0;
   margin: 0;
 }
 
 .nav_con li {
   flex: 1;
+}
+
+a {
+  background-color: #CFD6D6;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  font-weight: 100;
+  letter-spacing: 2px;
+  width: 100%;
+  padding:20px 5px;
+  text-align: center;
+}
+
+a:hover {
+  background:rgba(0,0,0,0.1);
 }
 
 .background1{
@@ -81,11 +96,11 @@ h3 {
   line-height: 1.5;
 }
 
-ul {
+.describe ul {
   list-style-type: none;
 }
 
-li {
+.describe li {
   padding: 1vh;
 }
 
