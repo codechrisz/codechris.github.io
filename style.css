@@ -38,6 +38,7 @@ body {
 
 .nav_con {
   display: flex;
+
   list-style: none;
   border-bottom: solid 2px #808E8D;
   padding: 0;
@@ -45,19 +46,25 @@ body {
 }
 
 .nav_con li {
+  flex: 3;
+  display: flex;
+}
+
+.nav_con .social {
   flex: 1;
 }
 
 a {
   background-color: #CFD6D6;
-  display: inline-block;
+  display: block;
   text-decoration: none;
   color: black;
   font-weight: 100;
   letter-spacing: 2px;
   width: 100%;
-  padding:20px 5px;
+  padding:10px 0 10px 0;
   text-align: center;
+  align-items: stretch;
 }
 
 a:hover {
