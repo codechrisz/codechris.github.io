@@ -16,15 +16,16 @@
     </div>
 
     <nav class="nav">
-      <ul class="nav_con">
+      <a href="#" class="toggleNav">☰ Menu</a>
+      <ul class="">
         <li><a href="./index.html">Home</a></li>
         <li><a href="./forecast.html">Forecast</a></li>
         <li><a href="#">About me</a></li>
         <!-- <li><a href="#">Contact</a></li> -->
-        <li class="social"><a href="https://www.linkedin.com/in/christos-zintzovas-ab6baa159/"><i class="fa fa-linkedin"></i></a></li>
-        <li class="social"><a href="https://twitter.com/ChristosZin"><i class="fa fa-twitter"></i></a></li>
-        <li class="social"><a href="https://github.com/codechrisz"><i class="fa fa-github"></i></a></li>
-        <li class="social"><a href="https://www.instagram.com/chris.zzin/"><i class="fa fa-instagram"></i></a></li>
+        <li class="social"><a href="https://www.linkedin.com/in/christos-zintzovas-ab6baa159/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+        <li class="social"><a href="https://twitter.com/ChristosZin" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        <li class="social"><a href="https://github.com/codechrisz" target="_blank"><i class="fa fa-github"></i></a></li>
+        <li class="social"><a href="https://www.instagram.com/chris.zzin/" target="_blank"><i class="fa fa-instagram"></i></a></li>
       </ul>
     </nav>
     <div class="content">
@@ -37,6 +38,16 @@
     </div>
 
 	
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script>
+  	$(function() {
+      $('.toggleNav').on('click',function() {
+        $('.nav ul').toggleClass('open');
+      });
+    });
+  </script>
 </body>
+<script>
+  console.log('Hello')
+</script>
 </html>

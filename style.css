@@ -23,7 +23,7 @@ body {
   /*grid-template-rows: minmax(100px, max-content);*/
   /*grid-gap: 10vh;*/
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .header {
@@ -36,27 +36,26 @@ body {
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  font-size: 3vh;
+  font-size: 30px;
 }
 
 .nav {
   grid-area: nav;
 }
-.nav_con {
+.nav ul {
   display: flex;
-
   list-style: none;
   border-bottom: solid 2px #808E8D;
   padding: 0;
   margin: 0;
 }
 
-.nav_con li {
+.nav li {
   flex: 3;
   display: flex;
 }
 
-.nav_con .social {
+.nav .social {
   flex: 1;
 }
 
@@ -77,6 +76,10 @@ a:hover {
   background:rgba(0,0,0,0.1);
 }
 
+.toggleNav {
+  display: none;
+}
+
 .content {
   grid-area: content;
 }
@@ -89,15 +92,15 @@ a:hover {
   height: 10vh;
 }
 
-.forecast-1 {
+.forecast {
   background-color: #CFD6D6;
   border: solid #808E8D;
   border-width: 2px 0 2px 0;
-  font-size: 1.5vh;
+  font-size: 14px;
   display: flex;
 }
 
-.forecast-1 >* {
+.forecast >* {
   flex: 1;
 }
 
@@ -105,7 +108,7 @@ h3 {
   text-align: center;
 }
 
-.forecast-1 .describe {
+.forecast .describe {
   border: solid #808E8D;
   border-width: 0 1px 0 0;
   padding: 4vh;
@@ -121,34 +124,7 @@ h3 {
   padding: 1vh;
 }
 
-.forecast-1 .something {
-  border: solid #808E8D;
-  border-width: 0 0 0 1px;
-  display: flex;
-  justify-content: center;
-}
-
-.forecast-2 {
-  background-color: #CFD6D6;
-  border: solid #808E8D;
-  border-width: 2px 0 2px 0;
-  display: flex;
-  font-size: 1.5vh;
-}
-
-.forecast-2 >* {
-  flex: 1;
-}
-
-.forecast-2 .describe {
-  border: solid #808E8D;
-  border-width: 0 1px 0 0;
-  padding: 4vh;
-  text-align: justify;
-  line-height: 1.5;
-}
-
-.forecast-2 .something {
+.forecast .something {
   border: solid #808E8D;
   border-width: 0 0 0 1px;
   display: flex;
@@ -163,7 +139,7 @@ h3 {
   display: flex;
   flex-direction: column;
   text-align: center;
-  font-size: 1.5vh;
+  font-size: 12px;
 
 }
 
@@ -180,6 +156,47 @@ svg {
   width: 70%;
   align-self: center;
 }
+
+/*media queries*/
+
+@media screen and (max-width: 450px) {
+
+  .header {
+    font-size: 20px;
+  }
+
+  .forecast {
+    flex-direction: column;
+  }
+
+  .forecast .describe {
+    border-bottom: solid #808E8D;
+  }
+
+  .nav li {
+    flex-basis:100%;
+  }
+
+  .toggleNav {
+    display: block;
+  }
+
+  .nav ul {
+    display: none;
+  }
+
+  .nav ul.open {
+      display: flex;
+      /*flex-direction: column;*/
+      flex-wrap: wrap;
+    }
+
+  .nav .social {
+    flex: 1 1 25%;
+  }
+}
+
+
 
 /*  Colors
 http://paletton.com/#uid=13h0u0k18O17rzm4NFO2nx-35tf
