@@ -72,12 +72,17 @@ a {
   align-items: stretch;
 }
 
-a:hover {
+.nav li a:hover {
   background:rgba(0,0,0,0.1);
 }
 
 .toggleNav {
   display: none;
+}
+
+.toggleNav:hover {
+  font-weight: 700;
+  font-size: 18px;
 }
 
 .content {
