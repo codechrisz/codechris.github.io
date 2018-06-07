@@ -68,21 +68,30 @@ a {
 }
 
 .content {
-  display: grid;
+  /*display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 1fr 1fr 1fr;
-  grid-gap: 10px; 
+  grid-gap: 10px; */
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+ /* align-items: center;*/
 }
 
 .forecast {
   background-color: #66b9bf;
-  grid-row-start: 2;
-  grid-column-start: span 2;
+  flex-grow: 1;
+  /*grid-row-start: 2;
+  grid-column-start: span 2;*/
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   border: #07889b 2px solid;
+}
+
+.forecast.open {
+  
 }
 
 .forecast:hover {
