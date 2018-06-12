@@ -68,21 +68,14 @@ a {
 }
 
 .content {
-  /*display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-gap: 10px; */
   display: flex;
   flex-direction: column;
   align-content: center;
- /* align-items: center;*/
 }
 
 .forecast {
   background-color: #66b9bf;
   flex-grow: 1;
-  /*grid-row-start: 2;
-  grid-column-start: span 2;*/
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -91,7 +84,7 @@ a {
 }
 
 .forecast.open {
-  
+  flex-grow: 4;
 }
 
 .forecast:hover {

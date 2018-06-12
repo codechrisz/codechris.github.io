@@ -45,7 +45,7 @@
 		    		<p>17-26oC</p>
 		    	</div>
 		    </div>
-		    <div class="forecast open">
+		    <div class="forecast">
 		    	<div class="title">06/06/2018</div>
 		    	<div class="icon">
 		    		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
@@ -100,6 +100,21 @@
         $('.nav ul').toggleClass('open');
       });
     });
+
+    var dailyWeather = document.querySelectorAll('.forecast');
+
+    function toggleOpen() {
+    	this.classList.toggle('open');
+    	console.log(this)
+    }
+
+    function createForecast() {
+    	// this.createElement('div')
+    	console.log('hi')
+    }
+    
+    dailyWeather.forEach(forecast => forecast.addEventListener('click', toggleOpen))
+    dailyWeather.forEach(forecast => forecast.addEventListener('transitionend', createForecast))
 
   </script>
 </body>
