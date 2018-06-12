@@ -26,7 +26,7 @@
 	    </nav>
 	    <div class="content">
 		    <div class="forecast">
-		    	<div class="title">06/06/2018</div>
+		    	<div class="title">13/06/2018</div>
 		    	<div class="icon">
 		    		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
 					aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -42,11 +42,12 @@
 					</svg>
 		    	</div>
 		    	<div class="describe">
-		    		<p>17-26oC</p>
+		    		<p>25-36oC</p>
 		    	</div>
+		    	<div class="text">Ανεβαίνει ακόμα λίγο η θερμοκρασία ενώ το μεσημέρι και το απόγευμα θα υπάρχουν και λίγες νεφώσεις. </div>
 		    </div>
 		    <div class="forecast">
-		    	<div class="title">06/06/2018</div>
+		    	<div class="title">14/06/2018</div>
 		    	<div class="icon">
 		    		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
 					aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -62,29 +63,34 @@
 					</svg>
 		    	</div>
 		    	<div class="describe">
-		    		<p>17-25oC</p>
+		    		<p>25-35oC</p>
 		    	</div>
+		    	<div class="text">Αυξάνονται λίγο οι συγκεντρώσεις σκόνης. Αραιές νεφώσεις, κατά διαστήματα αθξημένες από το μεσημέρι.</div>
 		    </div>
 		    <div class="forecast">
-		    	<div class="title">06/06/2018</div>
+		    	<div class="title">15/06/2018</div>
 		    	<div class="icon">
 		    		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
 					aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
-					  <title>Partly Cloudy</title>
+					  <title>Partly Cloudy Rain</title>
 					  <desc>A line styled icon from Orion Icon Library.</desc>
 					  <path data-name="layer2"
-					  d="M27.1 39.5a10 10 0 1 1 6.9-10M24 8v6M8 30H2m6.4-15.5l4.3 4.2m26.9-4.2l-4.3 4.2M12.7 41.3l-4.3 4.3"
-					  fill="none" stroke="#e37222" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+					  d="M18.7 31.1A10 10 0 1 1 32.1 18M23 2v4M7 22H3M9 8l3 3m25-3l-3 3M12 33l-3 3"
+					  fill="none" stroke="#e37222" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="miter"
 					  stroke-linecap="round"></path>
-					  <path data-name="layer1" d="M52 36a13 13 0 0 0-25 4.1h-1a8 8 0 1 0 0 16h26a10 10 0 0 0 0-20z"
-					  fill="none" stroke="#e37222" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+					  <path data-name="layer2" d="M51 24a13 13 0 0 0-25 4.1h-1a8 8 0 1 0 0 16h26a10 10 0 0 0 0-20z"
+					  fill="none" stroke="#e37222" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="miter"
+					  stroke-linecap="round"></path>
+					  <path data-name="layer1" fill="none" stroke="#e37222" stroke-miterlimit="10"
+					  stroke-width="2" d="M51 50v12m-8-12v6m-8-6v12m-8-12v6" stroke-linejoin="miter"
 					  stroke-linecap="round"></path>
 					</svg>
 		    	</div>
 		    	<div class="describe">
-		    		<p>17-25oC</p>
+		    		<p>25-33oC</p>
 		    	</div>
-		    </div>
+		    	<div class="text">Αραιές νεφώσεις με πιθανότητα λασποβροχών τις πρώτες πρωινές ώρες. Πιθανότητα μπόρας και το απόγευμα. Μικρή πτώση της θερμοκρασίας</div>
+		    </div>		
 	    </div>
 	    <div class="footer">
 	    	<p><span>CodeChrisZ</span></p>
@@ -108,13 +114,9 @@
     	console.log(this)
     }
 
-    function createForecast() {
-    	// this.createElement('div')
-    	console.log('hi')
-    }
     
     dailyWeather.forEach(forecast => forecast.addEventListener('click', toggleOpen))
-    dailyWeather.forEach(forecast => forecast.addEventListener('transitionend', createForecast))
+    // dailyWeather.forEach(forecast => forecast.addEventListener('transitionend', createForecast))
 
   </script>
 </body>

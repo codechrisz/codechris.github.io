@@ -81,11 +81,20 @@ a {
   align-items: center;
   justify-content: space-around;
   border: #07889b 2px solid;
+  transition-duration: 0.5s;
 }
 
 .forecast.open {
   flex-grow: 4;
+  transition-duration: 0.5s;
 }
+
+/*.text {
+  display: none;
+}*/
+
+.forecast > *:last-child { transform: translateX(1000%); }
+.forecast.open > *:last-child { transform: translateX(0); }
 
 .forecast:hover {
   background-color: #07889b;
