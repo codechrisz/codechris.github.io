@@ -98,8 +98,15 @@ a {
 .forecast > *:last-child { transform: translateX(1000%); display: none; }
 .forecast.open > *:last-child { transform: translateX(0); display: block; }
 
+.text {
+  font-size: 16px;
+  padding: 0 30px 10px 30px;
+  text-align: center;
+}
+
 .forecast:hover {
   background-color: #07889b;
+  cursor: pointer;
 }
 
 .footer {
