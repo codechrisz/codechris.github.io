@@ -15,7 +15,8 @@ body {
 		grid-template-areas: 
 		"menu"
 		"top"
-		"discription";
+		"discription"
+		"contact";
 		grid-row-gap: 10px;
 	}
 
@@ -105,6 +106,38 @@ ul li:before {
     transform: translateY(-50%);
 }
 
+.contact {
+	grid-area: contact;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.contact-item {
+	align-self: center;
+	display: flex;
+	flex-direction: column;
+	color: #3A3C3C;
+
+}
+
+.contact img {
+	width: 70px;
+	height: 70px;
+	margin: auto;
+}
+
+a:link {
+	color: #3A3C3C;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #21433B;
+	font-weight: 800;
+	font-size: 18px;
+}
+
 @media screen and (min-width: 650px) {
 	.container {
 		display: grid;
@@ -113,7 +146,8 @@ ul li:before {
 		grid-template-areas: 
 		"side menu"
 		"side top"
-		"side discription";
+		"side discription"
+		"side contact";
 	}
 
 	.name {
@@ -130,6 +164,11 @@ ul li:before {
 	    transform: translate(-110px, 0px);
 	    font-size: 40px;
 	    color: #2D2848;
+	}
+
+	.contact {
+		flex-direction: row;
+		justify-content: space-around;
 	}
 
 	/*second color for the headings*/
