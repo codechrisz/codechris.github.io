@@ -40,7 +40,7 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    background: url('https://c2.staticflickr.com/2/1900/43730291665_96fb622567_b.jpg') center center;
+    background: url('https://c2.staticflickr.com/2/1900/43730291665_96fb622567_z.jpg') center center;
     background-repeat:no-repeat;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
@@ -142,12 +142,16 @@ a:hover {
 	.container {
 		display: grid;
 		grid-template-columns: 20% 1fr ;
-		grid-template-rows: 50px 80vh 1fr;
+		grid-template-rows: 50px 75vh 1fr;
 		grid-template-areas: 
 		"side menu"
 		"side top"
 		"side discription"
 		"side contact";
+	}
+	
+	.img {
+		background: url('https://c2.staticflickr.com/2/1900/43730291665_96fb622567_b.jpg');
 	}
 
 	.name {
